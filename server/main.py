@@ -7,7 +7,7 @@ load_dotenv()  # Load variables from .env
 
 app = FastAPI()
 
-API_URL = "https://api-inference.huggingface.co/models/girizhhh/sentimentAnalyzer"
+API_URL = "https://router.huggingface.co/hf-inference/models/girizhhh/sentimentAnalyzer"
 headers = {"Authorization": f"Bearer {os.getenv('HF_TOKEN')}"}
 
 @app.get("/predict")
